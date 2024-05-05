@@ -1,8 +1,10 @@
-Dawn 7.0.1 introduces several bug fixes.
-
+Dawn 13.0.1 introduces a few fixes.
+### Changed
+- The cart drawer header (Product, Total) is not sticky anymore when the content is scrollable
 ### Fixes and improvements
-- We fixed an issue causing mobile slider controls to display unnecessarily under some conditions.
-- We fixed an issue where hidden variant media were visible in product media modals.
-- We fixed a spacing issue with the “Middle center” desktop logo position setting.
-- We fixed an issue that could prevent the complementary products block from displaying product images.
-- We updated Shopify Help Center links for complementary products.
+- Fix product rating alignment when the product doesn't have a media
+- Fix scroll issue on variant change
+- Limit width of country selector when the currency is the same for all the countries
+- Fix missing alt tags for the collection image on the collection page as well as for collection cards
+- Fix cart drawer's cart note to prevent overlapping of the text and caret icon
+- Fix cart drawer's header to prevent an overlap with the items in the cart
