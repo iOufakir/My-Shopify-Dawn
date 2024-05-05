@@ -19,16 +19,33 @@
   {%- endif -%}
 
   {%- style -%}
+
+.section-{{ section.id }}{
+  padding-top: 2rem;
+}
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+      px;
     }
 
     @media screen and (min-width: 750px) {
       .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
+        padding-top: {{ section.settings.padding_top }}
+        px;
+        padding-bottom: {{ section.settings.padding_bottom }}
+        px;
       }
+    }
+
+    .block-delivery-status {
+      display: block;
+      font-size: 1.4rem;
+    }
+
+    .block-delivery-status strong {
+        color: #3f944f; 
     }
   {%- endstyle -%}
 
@@ -40,7 +57,10 @@
   {%- endif -%}
 
   {% if section.settings.image_zoom == 'hover' %}
-    <script id="EnableZoomOnHover-main" src="{{ 'magnify.js' | asset_url }}" defer="defer"></script>
+    <script
+      id="EnableZoomOnHover-main"
+      src="{{ 'magnify.js' | asset_url }}"
+      defer="defer"></script>
   {% endif %}
   {%- if request.design_mode -%}
     <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
@@ -54,15 +74,13 @@
       rel="stylesheet"
       href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css"
       media="print"
-      onload="this.media='all'"
-    >
+      onload="this.media='all'">
     <link
       id="ModelViewerOverride"
       rel="stylesheet"
       href="{{ 'component-model-viewer-ui.css' | asset_url }}"
       media="print"
-      onload="this.media='all'"
-    >
+      onload="this.media='all'">
   {%- endif -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
