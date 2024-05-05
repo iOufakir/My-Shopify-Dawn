@@ -24,6 +24,17 @@
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
 
+    
+    .block-delivery-status {
+      margin-top: 15px;
+      display: block;
+      font-size: 1.4rem;
+
+      strong {
+        color: #3f944f;
+      }
+    }
+
     @media screen and (min-width: 750px) {
       .section-{{ section.id }}-padding {
         padding-top: {{ section.settings.padding_top }}px;
@@ -129,6 +140,21 @@
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
+
+                <div class="block-delivery-status">
+                  <strong>
+                    {{ 'shopify.checkout.shop_policies.shipping_policy' | t }}
+                  </strong>
+                  <span>
+                    -
+                    <u>
+                      <a class="link link--text" href="/pages/shipping-policy">
+                        Shipping Info
+                      </a>
+                    </u>
+                  </span>
+                </div>
+                
               {%- when 'inventory' -%}
                 <p
                   class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"

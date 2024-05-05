@@ -41,6 +41,9 @@
             >
           {%- endif -%}
           <p class="announcement-bar__message h5">
+            <strong>
+              {{ section.blocks.first.settings.firstText | escape }}
+            </strong>
             <span>{{ section.blocks.first.settings.text | escape }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
               {% render 'icon-arrow' %}
@@ -243,7 +246,13 @@
         {
           "type": "text",
           "id": "text",
-          "default": "Welcome to our store",
+          "default": "is ALWAYS on us",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "text",
+          "id": "firstText",
+          "default": "Free Shipping",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
         },
         {

@@ -1306,6 +1306,7 @@ button.shopify-payment-button__button--unbranded {
   padding: 1.2rem 2.6rem;
 }
 
+
 /* Button - other */
 
 .button:disabled,
@@ -1992,6 +1993,25 @@ input[type='checkbox'] {
 product-info .loading__spinner:not(.hidden) ~ *,
 .quantity__rules-cart .loading__spinner:not(.hidden) ~ * {
   visibility: hidden;
+}
+
+
+/* CUSTOM CHANGES */
+.quantity-small {
+  min-height: calc((var(--inputs-border-width) * 2) + 3rem);
+  max-height: 3.2rem;
+  width: auto;
+}
+
+.quantity-small .quantity__button:first-child, .quantity-small .quantity__button:last-child{
+  width: 3rem;
+}
+
+.quantity-small .quantity__input {
+  flex-grow: 0;
+  -webkit-appearance: initial;
+  appearance: initial;
+  width: 5rem;
 }
 
 /* component-modal */
@@ -2752,7 +2772,10 @@ details[open] > .header__submenu {
 .header__menu-item {
   padding: 1.2rem;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-right: 3rem;
+  color: rgba(var(--color-foreground), 0.65);
 }
 
 .header__menu-item:hover {
@@ -2764,8 +2787,8 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover span {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  text-decoration: none;
+  text-underline-offset: 0.5rem;
 }
 
 details[open] > .header__menu-item {
@@ -2783,12 +2806,14 @@ details[open] > .header__menu-item .icon-caret {
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
+  font-weight: 600;
   text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  text-underline-offset: 0.5rem;
 }
 
 .header__menu-item:hover .header__active-menu-item {
   text-decoration-thickness: 0.2rem;
+  text-decoration: underline;
 }
 
 .header__submenu {
@@ -2893,6 +2918,10 @@ details-disclosure > details {
   background: rgb(var(--color-background));
   background: var(--gradient-background);
   background-attachment: fixed;
+}
+
+.newsletter-gradient {
+  background: var(--secondary_background_gradient);
 }
 
 @media screen and (forced-colors: active) {

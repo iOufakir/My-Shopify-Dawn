@@ -15,6 +15,15 @@
   .drawer {
     visibility: hidden;
   }
+
+  .cart-remove-btn {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .cart-remove-btn-text {
+    margin-right: 0.5rem;
+  }
 </style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
@@ -131,7 +140,7 @@
                         </td>
 
                         <td class="cart-item__details" role="cell" headers="CartDrawer-ColumnProduct">
-                          {%- if settings.show_vendor -%}
+                          {%- if settings.show_vendor_drawer -%}
                             <p class="caption-with-letter-spacing light">{{ item.product.vendor }}</p>
                           {%- endif -%}
 
@@ -277,7 +286,7 @@
                           <quantity-popover>
                             <div class="cart-item__quantity-wrapper quantity-popover-wrapper">
                               <div class="quantity-popover-container{% if has_qty_rules or has_vol_pricing %} quantity-popover-container--hover{% endif %}">
-                                <quantity-input class="quantity cart-quantity">
+                                <quantity-input class="quantity cart-quantity quantity-small">
                                   <button class="quantity__button" name="minus" type="button">
                                     <span class="visually-hidden">
                                       {{-
@@ -321,6 +330,7 @@
                               </div>
                               <cart-remove-button
                                 id="CartDrawer-Remove-{{ item.index | plus: 1 }}"
+                                class="cart-remove-btn"
                                 data-index="{{ item.index | plus: 1 }}"
                               >
                                 <button
@@ -329,6 +339,7 @@
                                   aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}"
                                   data-variant-id="{{ item.variant.id }}"
                                 >
+                                <span class="cart-remove-btn-text">{{ 'sections.cart.remove' | t }}</span>
                                   {% render 'icon-remove' %}
                                 </button>
                               </cart-remove-button>
@@ -521,6 +532,13 @@
             {{ 'sections.cart.checkout' | t }}
           </button>
         </div>
+
+        <div class="continue-shopping">
+          <p>
+            or <strong onclick="this.closest('cart-drawer').close()">Continue Shopping<span aria-hidden="true"> →</span></strong>
+          </p>
+        </div>
+
       </div>
     </div>
   </div>
