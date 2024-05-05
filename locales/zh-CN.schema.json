@@ -32,7 +32,7 @@
       "settings": {
         "type_header_font": {
           "label": "字体",
-          "info": "选择其他字体可能会影响您商店的速度。[详细了解系统字体。](https:\/\/help.shopify.com\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
+          "info": "选择其他字体可能会影响您商店的速度。[详细了解系统字体。](https://help.shopify.com/manual/online-store/os/store-speed/improving-speed#fonts)"
         },
         "header__1": {
           "content": "标题"
@@ -42,7 +42,7 @@
         },
         "type_body_font": {
           "label": "字体",
-          "info": "选择其他字体可能会影响您商店的速度。[详细了解系统字体。](https:\/\/help.shopify.com\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
+          "info": "选择其他字体可能会影响您商店的速度。[详细了解系统字体。](https://help.shopify.com/manual/online-store/os/store-speed/improving-speed#fonts)"
         },
         "heading_scale": {
           "label": "字号比例"
@@ -61,35 +61,35 @@
         },
         "social_facebook_link": {
           "label": "Facebook",
-          "info": "https:\/\/facebook.com\/shopify"
+          "info": "https://facebook.com/shopify"
         },
         "social_pinterest_link": {
           "label": "Pinterest",
-          "info": "https:\/\/pinterest.com\/shopify"
+          "info": "https://pinterest.com/shopify"
         },
         "social_instagram_link": {
           "label": "Instagram",
-          "info": "http:\/\/instagram.com\/shopify"
+          "info": "http://instagram.com/shopify"
         },
         "social_tiktok_link": {
           "label": "TikTok",
-          "info": "https:\/\/tiktok.com\/@shopify"
+          "info": "https://tiktok.com/@shopify"
         },
         "social_tumblr_link": {
           "label": "Tumblr",
-          "info": "https:\/\/shopify.tumblr.com"
+          "info": "https://shopify.tumblr.com"
         },
         "social_snapchat_link": {
           "label": "Snapchat",
-          "info": "https:\/\/www.snapchat.com\/add\/shopify"
+          "info": "https://www.snapchat.com/add/shopify"
         },
         "social_youtube_link": {
           "label": "YouTube",
-          "info": "https:\/\/www.youtube.com\/shopify"
+          "info": "https://www.youtube.com/shopify"
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https:\/\/vimeo.com\/shopify"
+          "info": "https://vimeo.com/shopify"
         },
         "header": {
           "content": "社交媒体账户"
@@ -865,19 +865,19 @@
           "label": "显示社交媒体图标"
         },
         "header__3": {
-          "content": "国家\/地区选择器"
+          "content": "国家/地区选择器"
         },
         "header__4": {
-          "info": "若要添加国家\/地区，请转到 [营销设置](\/admin\/settings\/markets)。"
+          "info": "若要添加国家/地区，请转到 [营销设置](/admin/settings/markets)。"
         },
         "enable_country_selector": {
-          "label": "启用国家\/地区选择器"
+          "label": "启用国家/地区选择器"
         },
         "header__5": {
           "content": "语言选择器"
         },
         "header__6": {
-          "info": "若要添加语言，请转到您的 [语言设置](\/admin\/settings\/languages)。"
+          "info": "若要添加语言，请转到您的 [语言设置](/admin/settings/languages)。"
         },
         "enable_language_selector": {
           "label": "启用语言选择器"
@@ -893,7 +893,7 @@
         },
         "header__8": {
           "content": "政策链接",
-          "info": "若要添加商店政策，请前往 [政策设置](\/admin\/settings\/legal)。"
+          "info": "若要添加商店政策，请前往 [政策设置](/admin/settings/legal)。"
         },
         "show_policy": {
           "label": "显示政策链接"
@@ -960,7 +960,7 @@
           }
         },
         "logo_help": {
-          "content": "在[模板设置]](\/editor?context=theme&category=logo)中编辑您的 logo。"
+          "content": "在[模板设置]](/editor?context=theme&category=logo)中编辑您的 logo。"
         },
         "sticky_header_type": {
           "label": "粘性标头",
@@ -1364,10 +1364,10 @@
           "name": "分享",
           "settings": {
             "featured_image_info": {
-              "content": "如果您在社交媒体帖子中包含链接，该页面的配图将作为预览图片显示。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/images\/showing-social-media-thumbnail-images)。"
+              "content": "如果您在社交媒体帖子中包含链接，该页面的配图将作为预览图片显示。[了解详细信息](https://help.shopify.com/manual/online-store/images/showing-social-media-thumbnail-images)。"
             },
             "title_info": {
-              "content": "预览图片中包含商店标题和描述。[了解详细信息](https:\/\/help.shopify.com\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)。"
+              "content": "预览图片中包含商店标题和描述。[了解详细信息](https://help.shopify.com/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)。"
             },
             "text": {
               "label": "文本"
@@ -1675,10 +1675,10 @@
         "share": {
           "settings": {
             "featured_image_info": {
-              "content": "如果您在社交媒体帖子中包含链接，该页面的配图便会作为预览图片显示。[了解详细信息](https:\/\/help.shopify.com\/manual\/online-store\/images\/showing-social-media-thumbnail-images)。"
+              "content": "如果您在社交媒体帖子中包含链接，该页面的配图便会作为预览图片显示。[了解详细信息](https://help.shopify.com/manual/online-store/images/showing-social-media-thumbnail-images)。"
             },
             "title_info": {
-              "content": "预览图片中包含商店标题和描述。[了解详细信息](https:\/\/help.shopify.com\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)。"
+              "content": "预览图片中包含商店标题和描述。[了解详细信息](https://help.shopify.com/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)。"
             },
             "text": {
               "label": "文本"
@@ -2007,7 +2007,7 @@
       "settings": {
         "header": {
           "content": "媒体文件",
-          "info": "详细了解 [媒体文件类型。](https:\/\/help.shopify.com\/manual\/products\/product-media)"
+          "info": "详细了解 [媒体文件类型。](https://help.shopify.com/manual/products/product-media)"
         },
         "enable_video_looping": {
           "label": "启用视频循环"
@@ -2159,10 +2159,10 @@
         "image_width": {
           "label": "图片宽度",
           "options__1": {
-            "label": "1\/3 列宽"
+            "label": "1/3 列宽"
           },
           "options__2": {
-            "label": "1\/2 列宽"
+            "label": "1/2 列宽"
           },
           "options__3": {
             "label": "全列宽"
@@ -2584,7 +2584,7 @@
         },
         "header": {
           "content": "媒体文件",
-          "info": "详细了解 [媒体文件类型](https:\/\/help.shopify.com\/manual\/products\/product-media)"
+          "info": "详细了解 [媒体文件类型](https://help.shopify.com/manual/products/product-media)"
         },
         "enable_video_looping": {
           "label": "启用视频循环"

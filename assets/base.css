@@ -1858,23 +1858,6 @@ input[type='checkbox'] {
   min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
 }
 
-.quantity-small {
-  min-height: calc((var(--inputs-border-width) * 2) + 3rem);
-  max-height: 3.2rem;
-  width: auto;
-}
-
-.quantity-small .quantity__button:first-child, .quantity-small .quantity__button:last-child{
-  width: 3rem;
-}
-
-.quantity-small .quantity__input {
-  flex-grow: 0;
-  -webkit-appearance: initial;
-  appearance: initial;
-  width: 5rem;
-}
-
 .quantity:after {
   pointer-events: none;
   content: '';
@@ -2769,10 +2752,7 @@ details[open] > .header__submenu {
 .header__menu-item {
   padding: 1.2rem;
   text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 600;
-  padding-right: 3rem;
-  color: rgba(var(--color-foreground), 0.65);
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 .header__menu-item:hover {
@@ -2784,8 +2764,8 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover span {
-  text-decoration: none;
-  text-underline-offset: 0.5rem;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 
 details[open] > .header__menu-item {
@@ -2802,14 +2782,12 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-base-accent-1));
-  font-weight: 600;
+  color: rgb(var(--color-foreground));
   text-decoration: underline;
-  text-underline-offset: 0.5rem;
+  text-underline-offset: 0.3rem;
 }
 
 .header__menu-item:hover .header__active-menu-item {
-  text-decoration: underline;
   text-decoration-thickness: 0.2rem;
 }
 
