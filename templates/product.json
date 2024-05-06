@@ -106,11 +106,11 @@
         "media_position": "left",
         "constrain_to_viewport": false,
         "media_fit": "contain",
-        "image_zoom": "lightbox",
-        "media_size": "large",
-        "mobile_thumbnails": "hide",
+        "image_zoom": "hover",
+        "media_size": "medium",
+        "mobile_thumbnails": "show",
         "hide_variants": true,
-        "enable_video_looping": false,
+        "enable_video_looping": true,
         "padding_top": 36,
         "padding_bottom": 12
       }

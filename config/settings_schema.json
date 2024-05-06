@@ -78,6 +78,12 @@
           },
           {
             "type": "color",
+            "id": "secondary_text",
+            "label": "t:settings_schema.colors.settings.secondary_text.label",
+            "default": "#3a3a3a"
+          },
+          {
+            "type": "color",
             "id": "shadow",
             "label": "t:settings_schema.colors.settings.shadow.label",
             "default": "#121212"

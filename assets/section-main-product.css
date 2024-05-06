@@ -244,6 +244,8 @@ a.product__text {
 
 .product__title > * {
   margin: 0;
+  font-weight: 600;
+  color: var(--secondary-text-color);
 }
 
 .product__title > a {
@@ -267,6 +269,8 @@ a.product__text {
 }
 
 .product .price__container {
+  font-weight: 600;
+  color: var(--secondary-text-color);
   margin-bottom: 0.5rem;
 }
 

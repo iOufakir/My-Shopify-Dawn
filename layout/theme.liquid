@@ -56,7 +56,12 @@
           :root,
         {%- endif %}
         .color-{{ scheme.id }} {
+
           --color-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
+          /* My custom variables */
+         --secondary-text-color: {{ scheme.settings.secondary_text }};
+         /* END */
+
         {% if scheme.settings.background_gradient != empty %}
           --gradient-background: {{ scheme.settings.background_gradient }};
         {% else %}
