@@ -96,6 +96,10 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   cursor: pointer;
 }
 
+.drawer__close:hover {
+  color: rgba(var(--color-button), 0.8);
+}
+
 .cart-drawer__warnings .drawer__close {
   right: 5px;
 }

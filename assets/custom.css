@@ -1,0 +1,29 @@
+variant-selects div.select {
+  .img-view {
+    width: 3.6rem;
+    height: 3.6rem;
+    position: absolute;
+    top: 0.6rem;
+    right: 4rem;
+    border-radius: 50%;
+    pointer-events: none;
+    cursor: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px 0px;
+  }
+}
+
+
+.block-delivery-status {
+    margin-top: 15px;
+    display: block;
+    font-size: 1.4rem;
+
+    strong {
+      color: #3f944f;
+    }
+  }

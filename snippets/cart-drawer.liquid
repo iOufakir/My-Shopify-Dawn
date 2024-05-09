@@ -535,7 +535,10 @@
 
         <div class="continue-shopping">
           <p>
-            or <strong onclick="this.closest('cart-drawer').close()">Continue Shopping<span aria-hidden="true"> →</span></strong>
+            or <strong onclick="this.closest('cart-drawer').close()">
+              {{ 'sections.cart.continue_shopping' | t }}
+              <span aria-hidden="true"> →</span>
+              </strong>
           </p>
         </div>
 

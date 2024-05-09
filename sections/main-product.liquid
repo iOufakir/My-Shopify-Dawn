@@ -24,17 +24,6 @@
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
 
-    
-    .block-delivery-status {
-      margin-top: 15px;
-      display: block;
-      font-size: 1.4rem;
-
-      strong {
-        color: #3f944f;
-      }
-    }
-
     @media screen and (min-width: 750px) {
       .section-{{ section.id }}-padding {
         padding-top: {{ section.settings.padding_top }}px;
@@ -96,12 +85,15 @@
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'text' -%}
+
+              {%- if settings.show_vendor -%}
                 <p
                   class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                   {{ block.shopify_attributes }}
                 >
                   {{- block.settings.text -}}
                 </p>
+              {%- endif -%}
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h1>{{ product.title | escape }}</h1>
@@ -141,6 +133,7 @@
                   {%- endform -%}
                 </div>
 
+                <!-- CUSTOM code -->
                 <div class="block-delivery-status">
                   <strong>
                     {{ 'products.product.shipping_policy_text' | t }}
@@ -154,7 +147,8 @@
                     </u>
                   </span>
                 </div>
-                
+                <!-- END CUSTOM code -->
+
               {%- when 'inventory' -%}
                 <p
                   class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
@@ -915,7 +909,7 @@
               "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__2.label"
             }
           ],
-          "default": "button",
+          "default": "dropdown",
           "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
         },
         {

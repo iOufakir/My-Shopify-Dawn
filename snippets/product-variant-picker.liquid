@@ -9,6 +9,11 @@
   Usage:
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
+
+
+{%- assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image -%}
+
+
 {%- unless product.has_only_default_variant -%}
   <variant-selects
     id="variant-selects-{{ section.id }}"
@@ -84,6 +89,13 @@
                 picker_type: picker_type
               %}
             </select>
+
+            <!-- Custom code -->
+            {% if picker_type == 'dropdown' %} 
+              <img class="img-view" src="{{ featured_image | image_url: width: 256 }}">
+            {% endif %}
+            <!-- END Custom code -->
+
             {% render 'icon-caret' %}
           </div>
         </div>

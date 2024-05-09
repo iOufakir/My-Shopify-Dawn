@@ -963,6 +963,18 @@ class VariantSelects extends HTMLElement {
     this.addEventListener('change', this.onVariantChange);
   }
 
+  // CUSTOM CODE
+
+  changeImageView() {
+    const imgView = document.querySelector(".img-view");
+    const previewImage = this.currentVariant.featured_media.preview_image.src
+    
+    if (imgView && previewImage) {
+        imgView.src = previewImage;
+    }
+  }
+  //END CUSTOM CODE
+
   onVariantChange(event) {
     this.updateOptions();
     this.updateMasterId();
@@ -981,6 +993,9 @@ class VariantSelects extends HTMLElement {
       this.renderProductInfo();
       this.updateShareUrl();
     }
+    
+    // CUSTOM CODE
+    this.changeImageView();
   }
 
   updateOptions() {
