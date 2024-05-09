@@ -1261,7 +1261,8 @@ button.shopify-payment-button__button--unbranded {
 .cart-remove-btn button:hover, 
 button.button--secondary:hover, 
 button.shopify-payment-button__button:hover,
-button.cart__checkout-button:hover {
+button.cart__checkout-button:hover,
+button[type="submit"]:hover {
   font-weight: 600;
 }
 
