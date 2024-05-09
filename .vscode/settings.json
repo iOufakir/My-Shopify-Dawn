@@ -7,6 +7,8 @@
     "editor.formatOnSave": true
   },
   "[liquid]": {
-    "editor.formatOnSave": false
-  }
+    "editor.defaultFormatter": "Shopify.theme-check-vscode",
+    "editor.formatOnSave": true
+  },
+  "themeCheck.checkOnSave": true
 }
