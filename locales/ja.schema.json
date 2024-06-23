@@ -395,6 +395,9 @@
         },
         "options__4": {
           "label": "特大"
+        },
+        "options__5": {
+          "label": "4L"
         }
       },
       "image_shape": {
@@ -1016,6 +1019,14 @@
         },
         "menu_color_scheme": {
           "label": "メニューの配色"
+        },
+        "header__7": {
+          "content": "お客様アカウントのログイン",
+          "info": "お客様アカウントを管理するには、[お客様アカウント設定](/admin/settings/customer_accounts) に移動します。"
+        },
+        "enable_customer_avatar": {
+          "label": "アバターを表示",
+          "info": "お客様はShopにログインしているときのみアバターを見ることができます"
         }
       }
     },
@@ -3280,18 +3291,6 @@
           },
           "label": "デスクトップ画像の幅",
           "info": "画像はモバイル用に自動で最適化されます。"
-        },
-        "heading_size": {
-          "options__1": {
-            "label": "小"
-          },
-          "options__2": {
-            "label": "中"
-          },
-          "options__3": {
-            "label": "大"
-          },
-          "label": "見出しのサイズ"
         },
         "text_style": {
           "options__1": {

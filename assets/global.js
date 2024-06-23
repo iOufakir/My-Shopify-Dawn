@@ -26,33 +26,18 @@ class SectionId {
 }
 
 class HTMLUpdateUtility {
-  #preProcessCallbacks = [];
-  #postProcessCallbacks = [];
-
-  constructor() {}
-
-  addPreProcessCallback(callback) {
-    this.#preProcessCallbacks.push(callback);
-  }
-
-  addPostProcessCallback(callback) {
-    this.#postProcessCallbacks.push(callback);
-  }
-
   /**
    * Used to swap an HTML node with a new node.
    * The new node is inserted as a previous sibling to the old node, the old node is hidden, and then the old node is removed.
    *
    * The function currently uses a double buffer approach, but this should be replaced by a view transition once it is more widely supported https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API
    */
-  viewTransition(oldNode, newContent) {
-    this.#preProcessCallbacks.forEach((callback) => callback(newContent));
+  static viewTransition(oldNode, newContent, preProcessCallbacks = [], postProcessCallbacks = []) {
+    preProcessCallbacks?.forEach((callback) => callback(newContent));
 
     const newNodeWrapper = document.createElement('div');
     HTMLUpdateUtility.setInnerHTML(newNodeWrapper, newContent.outerHTML);
     const newNode = newNodeWrapper.firstChild;
-    oldNode.parentNode.insertBefore(newNode, oldNode);
-    oldNode.style.display = 'none';
 
     // dedupe IDs
     const uniqueKey = Date.now();
@@ -61,7 +46,10 @@ class HTMLUpdateUtility {
       element.form && element.setAttribute('form', `${element.form.getAttribute('id')}-${uniqueKey}`);
     });
 
-    this.#postProcessCallbacks.forEach((callback) => callback(newNode));
+    oldNode.parentNode.insertBefore(newNode, oldNode);
+    oldNode.style.display = 'none';
+
+    postProcessCallbacks?.forEach((callback) => callback(newNode));
 
     setTimeout(() => oldNode.remove(), 500);
   }
@@ -1085,11 +1073,11 @@ class VariantSelects extends HTMLElement {
       this.currentVariant = this.getVariantData(target.id);
       this.updateSelectedSwatchValue(event);
 
-      publish(PUB_SUB_EVENTS.variantChangeStart, {
+      publish(PUB_SUB_EVENTS.optionValueSelectionChange, {
         data: {
           event,
           target,
-          variant: this.currentVariant,
+          selectedOptionValues: this.selectedOptionValues,
         },
       });
     });

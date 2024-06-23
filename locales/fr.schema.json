@@ -395,6 +395,9 @@
         },
         "options__4": {
           "label": "Très grand"
+        },
+        "options__5": {
+          "label": "Très très grand"
         }
       },
       "image_shape": {
@@ -1016,6 +1019,14 @@
         },
         "menu_color_scheme": {
           "label": "Nuancier de couleurs de menu"
+        },
+        "header__7": {
+          "content": "Connexion au comptes clients",
+          "info": "Pour gérer les comptes clients, allez dans vos [paramètres de compte client](/admin/settings/customer_accounts)."
+        },
+        "enable_customer_avatar": {
+          "label": "Afficher l’avatar",
+          "info": "Les clients ne verront leur avatar que lorsqu’ils seront connectés à Shop"
         }
       }
     },
@@ -3280,18 +3291,6 @@
           },
           "label": "Largeur de l’image sur ordinateur",
           "info": "L’image est automatiquement optimisée pour les mobiles."
-        },
-        "heading_size": {
-          "options__1": {
-            "label": "Petit"
-          },
-          "options__2": {
-            "label": "Moyenne"
-          },
-          "options__3": {
-            "label": "Grand"
-          },
-          "label": "Taille du titre"
         },
         "text_style": {
           "options__1": {

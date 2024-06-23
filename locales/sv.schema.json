@@ -395,6 +395,9 @@
         },
         "options__4": {
           "label": "Extra stor"
+        },
+        "options__5": {
+          "label": "Extra extra stor"
         }
       },
       "image_shape": {
@@ -1016,6 +1019,14 @@
         },
         "menu_color_scheme": {
           "label": "Färgschema för meny"
+        },
+        "header__7": {
+          "content": "Inloggning till kundkonton",
+          "info": "Gå till [kundkontoinställningar](/admin/settings/customer_accounts) för att hantera kundkonton."
+        },
+        "enable_customer_avatar": {
+          "label": "Visa avatar",
+          "info": "Kunder ser endast sin avatar när de är inloggade med Shop"
         }
       }
     },
@@ -3280,18 +3291,6 @@
           },
           "label": "Bildbredd för dator",
           "info": "Bilden optimeras automatiskt för mobilen."
-        },
-        "heading_size": {
-          "options__1": {
-            "label": "Liten"
-          },
-          "options__2": {
-            "label": "Medel"
-          },
-          "options__3": {
-            "label": "Stor"
-          },
-          "label": "Rubrikstorlek"
         },
         "text_style": {
           "options__1": {

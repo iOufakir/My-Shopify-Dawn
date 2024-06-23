@@ -395,6 +395,9 @@
         },
         "options__4": {
           "label": "Extra grande"
+        },
+        "options__5": {
+          "label": "Extremamente grande"
         }
       },
       "image_shape": {
@@ -1016,6 +1019,14 @@
         },
         "menu_color_scheme": {
           "label": "Esquema de cores do menu"
+        },
+        "header__7": {
+          "content": "Início de sessão de contas de cliente",
+          "info": "Para gerir contas de cliente, aceda às suas [definições de contas de cliente](/admin/settings/customer_accounts)."
+        },
+        "enable_customer_avatar": {
+          "label": "Mostrar avatar",
+          "info": "Os clientes apenas verão o respetivo avatar quando iniciarem sessão com o Shop"
         }
       }
     },
@@ -3280,18 +3291,6 @@
           },
           "label": "Largura da imagem em computador",
           "info": "A imagem é otimizada automaticamente em dispositivos móveis."
-        },
-        "heading_size": {
-          "options__1": {
-            "label": "Pequeno"
-          },
-          "options__2": {
-            "label": "Médio"
-          },
-          "options__3": {
-            "label": "Grande"
-          },
-          "label": "Tamanho do título"
         },
         "text_style": {
           "options__1": {

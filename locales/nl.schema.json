@@ -395,6 +395,9 @@
         },
         "options__4": {
           "label": "Extra groot"
+        },
+        "options__5": {
+          "label": "Extra extra groot"
         }
       },
       "image_shape": {
@@ -1016,6 +1019,14 @@
         },
         "menu_color_scheme": {
           "label": "Kleurschemamenu"
+        },
+        "header__7": {
+          "content": "Inloggen bij klantaccounts",
+          "info": "Ga om klantaccounts te beheren naar je instellingen voor klantaccounts ](/admin/settings/customer_accounts)."
+        },
+        "enable_customer_avatar": {
+          "label": "Avatar weergeven",
+          "info": "Klanten kunnen de avatar alleen zien als ze zijn ingelogd bij Shop"
         }
       }
     },
@@ -3280,18 +3291,6 @@
           },
           "label": "Breedte van bureaubladafbeelding",
           "info": "De afbeelding wordt automatisch geoptimaliseerd voor mobiel."
-        },
-        "heading_size": {
-          "options__1": {
-            "label": "Klein"
-          },
-          "options__2": {
-            "label": "Gemiddeld"
-          },
-          "options__3": {
-            "label": "Groot"
-          },
-          "label": "Grootte koptekst"
         },
         "text_style": {
           "options__1": {

@@ -413,6 +413,9 @@
         },
         "options__4": {
           "label": "Extra large"
+        },
+        "options__5": {
+          "label": "Extra extra large"
         }
       },
       "image_shape": {
@@ -1172,6 +1175,14 @@
           "options__2": {
             "label": "Left"
           }
+        },
+        "header__7": {
+          "content": "Customer accounts log in",
+          "info": "To manage customer accounts, go to your [customer accounts settings](/admin/settings/customer_accounts)."
+        },
+        "enable_customer_avatar": {
+          "label": "Show avatar",
+          "info": "Customers will only see their avatar when they're signed in with Shop"
         }
       }
     },
@@ -1535,18 +1546,6 @@
           },
           "label": "Desktop image width",
           "info": "Image is automatically optimized for mobile."
-        },
-        "heading_size": {
-          "options__1": {
-            "label": "Small"
-          },
-          "options__2": {
-            "label": "Medium"
-          },
-          "options__3": {
-            "label": "Large"
-          },
-          "label": "Heading size"
         },
         "text_style": {
           "options__1": {

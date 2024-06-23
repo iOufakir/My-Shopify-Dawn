@@ -395,6 +395,9 @@
         },
         "options__4": {
           "label": "超大型"
+        },
+        "options__5": {
+          "label": "特大型"
         }
       },
       "image_shape": {
@@ -1016,6 +1019,14 @@
         },
         "menu_color_scheme": {
           "label": "選單顏色配置"
+        },
+        "header__7": {
+          "content": "顧客帳號登入",
+          "info": "若要管理顧客帳號，請前往您的[顧客帳號設定](/admin/settings/customer_accounts)。"
+        },
+        "enable_customer_avatar": {
+          "label": "顯示大頭貼",
+          "info": "當顧客登入 Shop 時只會看到他們的大頭貼。"
         }
       }
     },
@@ -3280,18 +3291,6 @@
           },
           "label": "電腦版圖片寬度",
           "info": "行動版的圖片會自動調整大小。"
-        },
-        "heading_size": {
-          "options__1": {
-            "label": "小"
-          },
-          "options__2": {
-            "label": "中"
-          },
-          "options__3": {
-            "label": "大"
-          },
-          "label": "標題大小"
         },
         "text_style": {
           "options__1": {

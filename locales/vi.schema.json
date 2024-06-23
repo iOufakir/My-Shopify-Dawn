@@ -395,6 +395,9 @@
         },
         "options__4": {
           "label": "Cực lớn"
+        },
+        "options__5": {
+          "label": "Cực cực lớn"
         }
       },
       "image_shape": {
@@ -1016,6 +1019,14 @@
         },
         "menu_color_scheme": {
           "label": "Bảng màu của menu"
+        },
+        "header__7": {
+          "content": "Đăng nhập tài khoản khách hàng",
+          "info": "Để quản lý tài khoản khách hàng, vào mục [cài đặt tài khoản khách hàng](/admin/settings/customer_accounts)."
+        },
+        "enable_customer_avatar": {
+          "label": "Hiển thị hình đại diện",
+          "info": "Khách hàng sẽ chỉ nhìn thấy hình đại diện của họ khi họ đăng nhập bằng Shop"
         }
       }
     },
@@ -3280,18 +3291,6 @@
           },
           "label": "Chiều rộng hình ảnh trên màn hình nền",
           "info": "Hình ảnh được tự động tối ưu hóa cho thiết bị di động."
-        },
-        "heading_size": {
-          "options__1": {
-            "label": "Nhỏ"
-          },
-          "options__2": {
-            "label": "Trung bình"
-          },
-          "options__3": {
-            "label": "Lớn"
-          },
-          "label": "Cỡ tiêu đề"
         },
         "text_style": {
           "options__1": {

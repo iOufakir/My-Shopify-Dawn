@@ -395,6 +395,9 @@
         },
         "options__4": {
           "label": "Extra large"
+        },
+        "options__5": {
+          "label": "Extra extra large"
         }
       },
       "image_shape": {
@@ -1016,6 +1019,14 @@
         },
         "menu_color_scheme": {
           "label": "Schema di colori del menu"
+        },
+        "header__7": {
+          "content": "Come accedere agli account cliente",
+          "info": "Per gestire gli account cliente vai su [customer accounts settings](/admin/settings/customer_accounts)."
+        },
+        "enable_customer_avatar": {
+          "label": "Mostra avatar",
+          "info": "I clienti vedranno i propri avatar quando avranno effettuato l'accesso a Shop"
         }
       }
     },
@@ -3280,18 +3291,6 @@
           },
           "label": "Larghezza immagine su desktop",
           "info": "L'immagine viene automaticamente ottimizzata per il mobile."
-        },
-        "heading_size": {
-          "options__1": {
-            "label": "Piccola"
-          },
-          "options__2": {
-            "label": "Media"
-          },
-          "options__3": {
-            "label": "Grande"
-          },
-          "label": "Dimensione titolo"
         },
         "text_style": {
           "options__1": {

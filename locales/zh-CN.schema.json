@@ -395,6 +395,9 @@
         },
         "options__4": {
           "label": "特大"
+        },
+        "options__5": {
+          "label": "特特大号"
         }
       },
       "image_shape": {
@@ -1016,6 +1019,14 @@
         },
         "menu_color_scheme": {
           "label": "菜单配色方案"
+        },
+        "header__7": {
+          "content": "客户账户登录",
+          "info": "若要管理客户账户，请前往您的[客户账户设置](/admin/settings/customer_accounts)。"
+        },
+        "enable_customer_avatar": {
+          "label": "显示头像",
+          "info": "客户将仅在使用 Shop 登录时才会看到自己的头像"
         }
       }
     },
@@ -3280,18 +3291,6 @@
           },
           "label": "台式设备图片宽度",
           "info": "图片会针对移动设备进行自动优化。"
-        },
-        "heading_size": {
-          "options__1": {
-            "label": "小"
-          },
-          "options__2": {
-            "label": "中"
-          },
-          "options__3": {
-            "label": "大"
-          },
-          "label": "标题大小"
         },
         "text_style": {
           "options__1": {

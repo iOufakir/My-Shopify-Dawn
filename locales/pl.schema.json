@@ -395,6 +395,9 @@
         },
         "options__4": {
           "label": "Bardzo duży"
+        },
+        "options__5": {
+          "label": "Bardzo, bardzo duży"
         }
       },
       "image_shape": {
@@ -1016,6 +1019,14 @@
         },
         "menu_color_scheme": {
           "label": "Kolorystyka menu"
+        },
+        "header__7": {
+          "content": "Logowanie do kont klientów",
+          "info": "Aby zarządzać kontami klientów, przejdź do [ustawień kont klientów](/admin/settings/customer_accounts)]."
+        },
+        "enable_customer_avatar": {
+          "label": "Pokaż awatar",
+          "info": "Klienci zobaczą swój awatar tylko po zalogowaniu się przez Shop"
         }
       }
     },
@@ -3280,18 +3291,6 @@
           },
           "label": "Szerokość obrazu na komputerze",
           "info": "Obraz jest automatycznie optymalizowany dla urządzeń mobilnych."
-        },
-        "heading_size": {
-          "options__1": {
-            "label": "Mały"
-          },
-          "options__2": {
-            "label": "Średni"
-          },
-          "options__3": {
-            "label": "Duży"
-          },
-          "label": "Rozmiar nagłówka"
         },
         "text_style": {
           "options__1": {

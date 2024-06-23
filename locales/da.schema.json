@@ -395,6 +395,9 @@
         },
         "options__4": {
           "label": "Ekstra stor"
+        },
+        "options__5": {
+          "label": "Ekstra, ekstra stor"
         }
       },
       "image_shape": {
@@ -1016,6 +1019,14 @@
         },
         "menu_color_scheme": {
           "label": "Farveskema for menu"
+        },
+        "header__7": {
+          "content": "Login for kundekonti",
+          "info": "For at administrere kundekonti skal du gå til [indstillingerne for kundekonti](/admin/settings/customer_accounts)."
+        },
+        "enable_customer_avatar": {
+          "label": "Vis avatar",
+          "info": "Kunder ser kun deres avatar, når de er logget ind med Shop"
         }
       }
     },
@@ -3280,18 +3291,6 @@
           },
           "label": "Billedbredde på computer",
           "info": "Billedet er automatisk optimeret til mobiltelefoner."
-        },
-        "heading_size": {
-          "options__1": {
-            "label": "Lille"
-          },
-          "options__2": {
-            "label": "Mellem"
-          },
-          "options__3": {
-            "label": "Stor"
-          },
-          "label": "Størrelse for overskrift"
         },
         "text_style": {
           "options__1": {
